@@ -1,0 +1,23 @@
+{
+  "doc_version": "thesis-runtime-v1",
+  "runtime_family": "conv_adapter_frozen_backbone",
+  "canonical_entrypoints": [
+    "thesis/scripts/clean.py",
+    "thesis/scripts/prepare_data.py",
+    "thesis/scripts/train_pipeline.py",
+    "thesis/scripts/evaluate_pipeline.py",
+    "thesis/scripts/run_pipeline_end_to_end.py"
+  ],
+  "required_docs": [
+    "thesis/documents/README.md",
+    "thesis/documents/baseline-inventory.md",
+    "thesis/documents/keep-archive-remove-matrix.md",
+    "thesis/documents/regression-criteria.md",
+    "thesis/documents/raw-input-contract.md",
+    "thesis/documents/architecture.md",
+    "thesis/documents/workflow.md",
+    "thesis/documents/migration-guide.md",
+    "thesis/documents/regression-matrix.md",
+    "thesis/documents/runtime-checklist.md"
+  ]
+}

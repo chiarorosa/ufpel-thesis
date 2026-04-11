@@ -1,0 +1,7 @@
+{
+  "best_f1": 0.7248751215487703,
+  "final_train_f1": 0.7427561339125692,
+  "final_val_f1": 0.7248751215487703,
+  "epochs_trained": 1,
+  "early_stopped": false
+}

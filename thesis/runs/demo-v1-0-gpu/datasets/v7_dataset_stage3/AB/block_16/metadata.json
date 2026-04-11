@@ -1,0 +1,38 @@
+{
+  "block_size": "16",
+  "classes": [
+    "HORZ_A",
+    "HORZ_B",
+    "VERT_A",
+    "VERT_B"
+  ],
+  "ensemble_versions": 3,
+  "original_train_distribution": {
+    "HORZ_A": 2465,
+    "HORZ_B": 2910,
+    "VERT_A": 2582,
+    "VERT_B": 2892
+  },
+  "oversample_factors": {
+    "0": 1,
+    "1": 5,
+    "2": 5,
+    "3": 1
+  },
+  "oversampled_train_distribution": {
+    "HORZ_A": 2465,
+    "HORZ_B": 14550,
+    "VERT_A": 12910,
+    "VERT_B": 2892
+  },
+  "stage": "stage3_ab",
+  "train_samples_original": 10849,
+  "train_samples_oversampled": 32817,
+  "val_distribution": {
+    "HORZ_A": 640,
+    "HORZ_B": 684,
+    "VERT_A": 678,
+    "VERT_B": 711
+  },
+  "val_samples": 2713
+}

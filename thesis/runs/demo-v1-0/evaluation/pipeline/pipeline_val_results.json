@@ -1,0 +1,146 @@
+{
+  "accuracy": 0.2685651353052234,
+  "f1_macro": 0.13710599274590216,
+  "f1_weighted": 0.20450075037198573,
+  "f1_per_class": [
+    0.4847101780009128,
+    0.03111111111111111,
+    0.20494417862838915,
+    0.37608247422680413,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+  ],
+  "confusion_matrix": [
+    [
+      531,
+      12,
+      707,
+      314,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      20,
+      7,
+      130,
+      242,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      37,
+      6,
+      257,
+      299,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      5,
+      9,
+      155,
+      912,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      7,
+      5,
+      154,
+      474,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      7,
+      2,
+      155,
+      520,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      9,
+      4,
+      183,
+      482,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      11,
+      6,
+      168,
+      526,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ]
+  ],
+  "config": {
+    "stage1_checkpoint": "/home/chiarorosa/cnn-av1-research/thesis/runs/demo-v1-0/training/solution1_adapter/stage1/stage1_model_best.pt",
+    "stage2_checkpoint": "/home/chiarorosa/cnn-av1-research/thesis/runs/demo-v1-0/training/solution1_adapter/stage2_adapter/stage2_adapter_model_best.pt",
+    "stage3_rect_checkpoint": "/home/chiarorosa/cnn-av1-research/thesis/runs/demo-v1-0/training/stage3_rect/model_best.pt",
+    "stage3_ab_checkpoint": "/home/chiarorosa/cnn-av1-research/thesis/runs/demo-v1-0/training/stage3_ab_binary/model_best.pt",
+    "dataset": "/home/chiarorosa/cnn-av1-research/thesis/runs/demo-v1-0/datasets/v7_dataset/block_16/val.pt",
+    "split": "val",
+    "timestamp": "2026-04-11T15:12:47.303207"
+  }
+}

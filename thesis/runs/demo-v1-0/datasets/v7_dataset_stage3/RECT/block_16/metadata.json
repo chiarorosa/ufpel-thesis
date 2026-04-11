@@ -1,0 +1,18 @@
+{
+  "block_size": "16",
+  "classes": [
+    "PARTITION_HORZ",
+    "PARTITION_VERT"
+  ],
+  "stage": "stage3_rect",
+  "train_distribution": {
+    "PARTITION_HORZ": 0.41654676258992807,
+    "PARTITION_VERT": 0.5834532374100719
+  },
+  "train_samples": 4170,
+  "val_distribution": {
+    "PARTITION_HORZ": 0.3997995991983968,
+    "PARTITION_VERT": 0.6002004008016032
+  },
+  "val_samples": 998
+}

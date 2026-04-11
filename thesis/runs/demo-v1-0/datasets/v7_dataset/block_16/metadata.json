@@ -1,0 +1,75 @@
+{
+  "block_size": "16",
+  "original_distribution": {
+    "PARTITION_HORZ": 0.0672184284230733,
+    "PARTITION_HORZ_A": 0.0977121817666866,
+    "PARTITION_HORZ_B": 0.11310067029612612,
+    "PARTITION_NONE": 0.2442647197658684,
+    "PARTITION_SPLIT": 0.1663152594643925,
+    "PARTITION_VERT": 0.09541492274286434,
+    "PARTITION_VERT_A": 0.10258992352959688,
+    "PARTITION_VERT_B": 0.11338389401139189
+  },
+  "seed": 42,
+  "stage2_class_weights": {
+    "class_counts": {
+      "0": 4204,
+      "1": 4170,
+      "2": 10849
+    },
+    "class_names": [
+      "SPLIT",
+      "RECT",
+      "AB"
+    ]
+  },
+  "stage2_groups": {
+    "AB": [
+      "PARTITION_HORZ_A",
+      "PARTITION_HORZ_B",
+      "PARTITION_VERT_A",
+      "PARTITION_VERT_B"
+    ],
+    "RECT": [
+      "PARTITION_HORZ",
+      "PARTITION_VERT"
+    ],
+    "SPLIT": [
+      "PARTITION_SPLIT"
+    ]
+  },
+  "stage3_groups": {
+    "AB": [
+      "PARTITION_HORZ_A",
+      "PARTITION_HORZ_B",
+      "PARTITION_VERT_A",
+      "PARTITION_VERT_B"
+    ],
+    "RECT": [
+      "PARTITION_HORZ",
+      "PARTITION_VERT"
+    ]
+  },
+  "test_ratio": 0.2,
+  "total_samples": 31777,
+  "train_samples": 25421,
+  "train_stage2_distribution": {
+    "PARTITION_HORZ": 0.09036050564428029,
+    "PARTITION_HORZ_A": 0.1282318056494824,
+    "PARTITION_HORZ_B": 0.1513811579878271,
+    "PARTITION_SPLIT": 0.218696353326744,
+    "PARTITION_VERT": 0.1265671331217812,
+    "PARTITION_VERT_A": 0.13431826457888987,
+    "PARTITION_VERT_B": 0.15044477969099515
+  },
+  "val_samples": 6356,
+  "val_stage2_distribution": {
+    "PARTITION_HORZ": 0.08326377295492488,
+    "PARTITION_HORZ_A": 0.1335559265442404,
+    "PARTITION_HORZ_B": 0.14273789649415694,
+    "PARTITION_SPLIT": 0.22558430717863104,
+    "PARTITION_VERT": 0.125,
+    "PARTITION_VERT_A": 0.14148580968280466,
+    "PARTITION_VERT_B": 0.14837228714524206
+  }
+}

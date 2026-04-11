@@ -1,0 +1,28 @@
+{
+  "block_size": "16",
+  "device": "cpu",
+  "dry_run": false,
+  "phase": "end_to_end",
+  "run_paths": {
+    "datasets_root": "/home/chiarorosa/cnn-av1-research/thesis/runs/demo-v1-0/datasets",
+    "evaluation_pipeline_dir": "/home/chiarorosa/cnn-av1-research/thesis/runs/demo-v1-0/evaluation/pipeline",
+    "evaluation_root": "/home/chiarorosa/cnn-av1-research/thesis/runs/demo-v1-0/evaluation",
+    "manifests_dir": "/home/chiarorosa/cnn-av1-research/thesis/runs/demo-v1-0/manifests",
+    "run_dir": "/home/chiarorosa/cnn-av1-research/thesis/runs/demo-v1-0",
+    "run_root": "/home/chiarorosa/cnn-av1-research/thesis/runs",
+    "solution1_training_dir": "/home/chiarorosa/cnn-av1-research/thesis/runs/demo-v1-0/training/solution1_adapter",
+    "stage1_checkpoint": "/home/chiarorosa/cnn-av1-research/thesis/runs/demo-v1-0/training/solution1_adapter/stage1/stage1_model_best.pt",
+    "stage2_checkpoint": "/home/chiarorosa/cnn-av1-research/thesis/runs/demo-v1-0/training/solution1_adapter/stage2_adapter/stage2_adapter_model_best.pt",
+    "stage3_ab_binary_checkpoint": "/home/chiarorosa/cnn-av1-research/thesis/runs/demo-v1-0/training/stage3_ab_binary/model_best.pt",
+    "stage3_rect_checkpoint": "/home/chiarorosa/cnn-av1-research/thesis/runs/demo-v1-0/training/stage3_rect/model_best.pt",
+    "training_root": "/home/chiarorosa/cnn-av1-research/thesis/runs/demo-v1-0/training",
+    "v7_dataset_dir": "/home/chiarorosa/cnn-av1-research/thesis/runs/demo-v1-0/datasets/v7_dataset/block_16",
+    "v7_stage3_ab_dir": "/home/chiarorosa/cnn-av1-research/thesis/runs/demo-v1-0/datasets/v7_dataset_stage3/AB/block_16",
+    "v7_stage3_rect_dir": "/home/chiarorosa/cnn-av1-research/thesis/runs/demo-v1-0/datasets/v7_dataset_stage3/RECT/block_16",
+    "v7_stage3_root": "/home/chiarorosa/cnn-av1-research/thesis/runs/demo-v1-0/datasets/v7_dataset_stage3"
+  },
+  "runtime_family": "conv_adapter_frozen_backbone",
+  "split": "val",
+  "status": "ok",
+  "timestamp": "2026-04-11T18:12:48Z"
+}

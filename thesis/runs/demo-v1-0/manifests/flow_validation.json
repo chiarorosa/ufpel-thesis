@@ -1,0 +1,48 @@
+{
+  "active_sequences": [
+    "Beauty_3840x2160_120fps_420_10bit"
+  ],
+  "errors": [],
+  "legacy_base_path": "/home/chiarorosa/cnn-av1-research/thesis/runs/demo-v1-0/datasets/legacy_bootstrap",
+  "ok": true,
+  "raw_root": "/home/chiarorosa/cnn-av1-research/thesis/uvg",
+  "stats": [
+    {
+      "block_size": 8,
+      "labels_count": 114389,
+      "partition_alignment": "rearrange_exact",
+      "partition_entries": 114389,
+      "qps_count": 114389,
+      "sample_blocks": 114389,
+      "sequence": "Beauty_3840x2160_120fps_420_10bit"
+    },
+    {
+      "block_size": 16,
+      "labels_count": 31777,
+      "partition_alignment": "rearrange_exact",
+      "partition_entries": 31777,
+      "qps_count": 31777,
+      "sample_blocks": 31777,
+      "sequence": "Beauty_3840x2160_120fps_420_10bit"
+    },
+    {
+      "block_size": 32,
+      "labels_count": 8130,
+      "partition_alignment": "rearrange_exact",
+      "partition_entries": 8130,
+      "qps_count": 8130,
+      "sample_blocks": 8130,
+      "sequence": "Beauty_3840x2160_120fps_420_10bit"
+    },
+    {
+      "block_size": 64,
+      "labels_count": 2032,
+      "partition_alignment": "rearrange_exact",
+      "partition_entries": 2032,
+      "qps_count": 2032,
+      "sample_blocks": 2032,
+      "sequence": "Beauty_3840x2160_120fps_420_10bit"
+    }
+  ],
+  "warnings": []
+}

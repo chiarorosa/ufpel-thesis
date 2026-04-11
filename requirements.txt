@@ -1,0 +1,22 @@
+# Core numerical stack
+numpy
+pandas
+scipy
+
+# Deep learning
+torch
+torchvision
+tqdm
+
+# Data processing for Excel workflows
+openpyxl
+
+# Evaluation and analysis
+scikit-learn
+matplotlib
+seaborn
+
+# Notebook support
+notebook
+ipykernel
+plotly

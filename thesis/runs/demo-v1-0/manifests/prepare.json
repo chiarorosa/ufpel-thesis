@@ -1,0 +1,239 @@
+{
+  "auto_generate_intra_raw_blocks": true,
+  "block_size": "16",
+  "commands": [
+    [
+      "/home/chiarorosa/cnn-av1-research/.venv/bin/python",
+      "/home/chiarorosa/cnn-av1-research/thesis/scripts/prepare_dataset.py",
+      "--base-path",
+      "/home/chiarorosa/cnn-av1-research/thesis/runs/demo-v1-0/datasets/legacy_bootstrap",
+      "--block-size",
+      "16",
+      "--output-dir",
+      "/home/chiarorosa/cnn-av1-research/thesis/runs/demo-v1-0/datasets/v7_dataset/block_16",
+      "--test-ratio",
+      "0.2",
+      "--seed",
+      "42"
+    ],
+    [
+      "/home/chiarorosa/cnn-av1-research/.venv/bin/python",
+      "/home/chiarorosa/cnn-av1-research/thesis/scripts/prepare_stage3_datasets.py",
+      "--base-path",
+      "/home/chiarorosa/cnn-av1-research/thesis/runs/demo-v1-0/datasets/legacy_bootstrap",
+      "--block-size",
+      "16",
+      "--output-base",
+      "/home/chiarorosa/cnn-av1-research/thesis/runs/demo-v1-0/datasets/v7_dataset_stage3",
+      "--test-ratio",
+      "0.2",
+      "--seed",
+      "42"
+    ]
+  ],
+  "dry_run": false,
+  "frame_height": 2160,
+  "frame_overlay": {
+    "enabled": true,
+    "frame_number": 0,
+    "output_root": "/home/chiarorosa/cnn-av1-research/thesis/runs/demo-v1-0/artifacts/frame_overlays",
+    "stats": [
+      {
+        "block_size_counts": {
+          "128": 8,
+          "16": 22672,
+          "32": 908,
+          "64": 24,
+          "8": 20840
+        },
+        "class_counts": {
+          "PARTITION_HORZ": 1946,
+          "PARTITION_HORZ_4": 8,
+          "PARTITION_HORZ_A": 3060,
+          "PARTITION_HORZ_B": 3647,
+          "PARTITION_NONE": 26085,
+          "PARTITION_VERT": 2763,
+          "PARTITION_VERT_4": 41,
+          "PARTITION_VERT_A": 3262,
+          "PARTITION_VERT_B": 3640
+        },
+        "coverage_ratio": 1.0,
+        "frame_number": 0,
+        "output_file": "/home/chiarorosa/cnn-av1-research/thesis/runs/demo-v1-0/artifacts/frame_overlays/Beauty_3840x2160_120fps_420_10bit/Beauty_3840x2160_120fps_420_10bit_frame0_overlay_all_blocks.png",
+        "sequence": "Beauty_3840x2160_120fps_420_10bit",
+        "total_regions": 44452
+      }
+    ]
+  },
+  "frame_width": 3840,
+  "generate_frame_overlay": true,
+  "generate_visual_samples": true,
+  "intra_raw_blocks_root": "/home/chiarorosa/cnn-av1-research/thesis/runs/demo-v1-0/artifacts/intra_raw_blocks",
+  "intra_raw_blocks_sequences": {
+    "Beauty_3840x2160_120fps_420_10bit": [
+      "16",
+      "32",
+      "64",
+      "8"
+    ]
+  },
+  "legacy_base_path": null,
+  "legacy_bootstrap": {
+    "enabled": true,
+    "legacy_base_path": "/home/chiarorosa/cnn-av1-research/thesis/runs/demo-v1-0/datasets/legacy_bootstrap",
+    "stats": [
+      {
+        "alignment_mode": "rearrange_exact",
+        "block_size": 8,
+        "dropped_entries": 0,
+        "labels_written": 114389,
+        "qps_written": 114389,
+        "sample_blocks": 114389,
+        "sequence": "Beauty_3840x2160_120fps_420_10bit",
+        "trimmed_entries": 0
+      },
+      {
+        "alignment_mode": "rearrange_exact",
+        "block_size": 16,
+        "dropped_entries": 0,
+        "labels_written": 31777,
+        "qps_written": 31777,
+        "sample_blocks": 31777,
+        "sequence": "Beauty_3840x2160_120fps_420_10bit",
+        "trimmed_entries": 0
+      },
+      {
+        "alignment_mode": "rearrange_exact",
+        "block_size": 32,
+        "dropped_entries": 0,
+        "labels_written": 8130,
+        "qps_written": 8130,
+        "sample_blocks": 8130,
+        "sequence": "Beauty_3840x2160_120fps_420_10bit",
+        "trimmed_entries": 0
+      },
+      {
+        "alignment_mode": "rearrange_exact",
+        "block_size": 64,
+        "dropped_entries": 0,
+        "labels_written": 2032,
+        "qps_written": 2032,
+        "sample_blocks": 2032,
+        "sequence": "Beauty_3840x2160_120fps_420_10bit",
+        "trimmed_entries": 0
+      }
+    ]
+  },
+  "overlay_frame_number": 0,
+  "overlay_image_format": "png",
+  "overlay_output_root": "/home/chiarorosa/cnn-av1-research/thesis/runs/demo-v1-0/artifacts/frame_overlays",
+  "partition_coord_scale": 4,
+  "phase": "prepare",
+  "raw_blocks_generation": [
+    {
+      "block_size": 8,
+      "frame_number": 0,
+      "output_bytes": 14641792,
+      "output_file": "/home/chiarorosa/cnn-av1-research/thesis/runs/demo-v1-0/artifacts/intra_raw_blocks/Beauty_3840x2160_120fps_420_10bit_sample_8.txt",
+      "partition_entries": 114389,
+      "sequence": "Beauty_3840x2160_120fps_420_10bit"
+    },
+    {
+      "block_size": 16,
+      "frame_number": 0,
+      "output_bytes": 16269824,
+      "output_file": "/home/chiarorosa/cnn-av1-research/thesis/runs/demo-v1-0/artifacts/intra_raw_blocks/Beauty_3840x2160_120fps_420_10bit_sample_16.txt",
+      "partition_entries": 31777,
+      "sequence": "Beauty_3840x2160_120fps_420_10bit"
+    },
+    {
+      "block_size": 32,
+      "frame_number": 0,
+      "output_bytes": 16650240,
+      "output_file": "/home/chiarorosa/cnn-av1-research/thesis/runs/demo-v1-0/artifacts/intra_raw_blocks/Beauty_3840x2160_120fps_420_10bit_sample_32.txt",
+      "partition_entries": 8130,
+      "sequence": "Beauty_3840x2160_120fps_420_10bit"
+    },
+    {
+      "block_size": 64,
+      "frame_number": 0,
+      "output_bytes": 16646144,
+      "output_file": "/home/chiarorosa/cnn-av1-research/thesis/runs/demo-v1-0/artifacts/intra_raw_blocks/Beauty_3840x2160_120fps_420_10bit_sample_64.txt",
+      "partition_entries": 2032,
+      "sequence": "Beauty_3840x2160_120fps_420_10bit"
+    }
+  ],
+  "raw_root": "/home/chiarorosa/cnn-av1-research/thesis/uvg",
+  "require_intra_raw_blocks": true,
+  "required_sequences": [
+    "Beauty_3840x2160_120fps_420_10bit"
+  ],
+  "run_paths": {
+    "datasets_root": "/home/chiarorosa/cnn-av1-research/thesis/runs/demo-v1-0/datasets",
+    "evaluation_pipeline_dir": "/home/chiarorosa/cnn-av1-research/thesis/runs/demo-v1-0/evaluation/pipeline",
+    "evaluation_root": "/home/chiarorosa/cnn-av1-research/thesis/runs/demo-v1-0/evaluation",
+    "manifests_dir": "/home/chiarorosa/cnn-av1-research/thesis/runs/demo-v1-0/manifests",
+    "run_dir": "/home/chiarorosa/cnn-av1-research/thesis/runs/demo-v1-0",
+    "run_root": "/home/chiarorosa/cnn-av1-research/thesis/runs",
+    "solution1_training_dir": "/home/chiarorosa/cnn-av1-research/thesis/runs/demo-v1-0/training/solution1_adapter",
+    "stage1_checkpoint": "/home/chiarorosa/cnn-av1-research/thesis/runs/demo-v1-0/training/solution1_adapter/stage1/stage1_model_best.pt",
+    "stage2_checkpoint": "/home/chiarorosa/cnn-av1-research/thesis/runs/demo-v1-0/training/solution1_adapter/stage2_adapter/stage2_adapter_model_best.pt",
+    "stage3_ab_binary_checkpoint": "/home/chiarorosa/cnn-av1-research/thesis/runs/demo-v1-0/training/stage3_ab_binary/model_best.pt",
+    "stage3_rect_checkpoint": "/home/chiarorosa/cnn-av1-research/thesis/runs/demo-v1-0/training/stage3_rect/model_best.pt",
+    "training_root": "/home/chiarorosa/cnn-av1-research/thesis/runs/demo-v1-0/training",
+    "v7_dataset_dir": "/home/chiarorosa/cnn-av1-research/thesis/runs/demo-v1-0/datasets/v7_dataset/block_16",
+    "v7_stage3_ab_dir": "/home/chiarorosa/cnn-av1-research/thesis/runs/demo-v1-0/datasets/v7_dataset_stage3/AB/block_16",
+    "v7_stage3_rect_dir": "/home/chiarorosa/cnn-av1-research/thesis/runs/demo-v1-0/datasets/v7_dataset_stage3/RECT/block_16",
+    "v7_stage3_root": "/home/chiarorosa/cnn-av1-research/thesis/runs/demo-v1-0/datasets/v7_dataset_stage3"
+  },
+  "runtime_family": "conv_adapter_frozen_backbone",
+  "skip_legacy_generation": false,
+  "status": "ok",
+  "timestamp": "2026-04-11T18:10:56Z",
+  "validated_inputs": [
+    "/home/chiarorosa/cnn-av1-research/thesis/uvg/Beauty_3840x2160_120fps_420_10bit/partition_frame_0.txt"
+  ],
+  "video_ext": "yuv",
+  "videos_root": "/home/chiarorosa/cnn-av1-research/videoset/uvg",
+  "visual_image_format": "png",
+  "visual_max_per_label_qp": 10,
+  "visual_output_root": "/home/chiarorosa/cnn-av1-research/thesis/runs/demo-v1-0/artifacts/visual_samples",
+  "visual_samples": {
+    "enabled": true,
+    "image_format": "png",
+    "max_per_label_qp": 10,
+    "output_root": "/home/chiarorosa/cnn-av1-research/thesis/runs/demo-v1-0/artifacts/visual_samples",
+    "scale": 8,
+    "stats": [
+      {
+        "block_size": 8,
+        "generated_images": 10,
+        "output_dir": "/home/chiarorosa/cnn-av1-research/thesis/runs/demo-v1-0/artifacts/visual_samples/Beauty_3840x2160_120fps_420_10bit/block_8",
+        "sequence": "Beauty_3840x2160_120fps_420_10bit",
+        "unique_label_qp_pairs": 1
+      },
+      {
+        "block_size": 16,
+        "generated_images": 80,
+        "output_dir": "/home/chiarorosa/cnn-av1-research/thesis/runs/demo-v1-0/artifacts/visual_samples/Beauty_3840x2160_120fps_420_10bit/block_16",
+        "sequence": "Beauty_3840x2160_120fps_420_10bit",
+        "unique_label_qp_pairs": 8
+      },
+      {
+        "block_size": 32,
+        "generated_images": 98,
+        "output_dir": "/home/chiarorosa/cnn-av1-research/thesis/runs/demo-v1-0/artifacts/visual_samples/Beauty_3840x2160_120fps_420_10bit/block_32",
+        "sequence": "Beauty_3840x2160_120fps_420_10bit",
+        "unique_label_qp_pairs": 10
+      },
+      {
+        "block_size": 64,
+        "generated_images": 31,
+        "output_dir": "/home/chiarorosa/cnn-av1-research/thesis/runs/demo-v1-0/artifacts/visual_samples/Beauty_3840x2160_120fps_420_10bit/block_64",
+        "sequence": "Beauty_3840x2160_120fps_420_10bit",
+        "unique_label_qp_pairs": 6
+      }
+    ]
+  },
+  "visual_scale": 8
+}

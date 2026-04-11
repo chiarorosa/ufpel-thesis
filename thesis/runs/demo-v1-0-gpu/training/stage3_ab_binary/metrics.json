@@ -1,0 +1,10 @@
+{
+  "best_f1": 0.46333381323426304,
+  "final_train_f1": 0.4965915651942626,
+  "final_val_f1": 0.46333381323426304,
+  "epochs_trained": 1,
+  "early_stopped": false,
+  "total_params": 11545060,
+  "trainable_params": 164482,
+  "param_efficiency": 1.4246959305538474
+}

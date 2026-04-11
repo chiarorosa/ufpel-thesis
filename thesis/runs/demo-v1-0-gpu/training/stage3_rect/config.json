@@ -1,0 +1,18 @@
+{
+  "dataset_dir": "/home/chiarorosa/cnn-av1-research/thesis/runs/demo-v1-0-gpu/datasets/v7_dataset_stage3/RECT/block_16",
+  "stage2_checkpoint": "/home/chiarorosa/cnn-av1-research/thesis/runs/demo-v1-0-gpu/training/solution1_adapter/stage2_adapter/stage2_adapter_model_best.pt",
+  "output": "/home/chiarorosa/cnn-av1-research/thesis/runs/demo-v1-0-gpu/training/stage3_rect",
+  "epochs": 1,
+  "batch_size": 256,
+  "lr_head": 0.0001,
+  "weight_decay": 1e-05,
+  "loss": "focal",
+  "gamma": 2.0,
+  "alpha": 0.25,
+  "fix_batchnorm": true,
+  "no_augmentation": false,
+  "seed": 42,
+  "device": "cuda",
+  "num_workers": 4,
+  "timestamp": "2026-04-11T15:15:23.599738"
+}

@@ -1,0 +1,146 @@
+{
+  "accuracy": 0.2684078036500944,
+  "f1_macro": 0.1366802090957854,
+  "f1_weighted": 0.21134234920151682,
+  "f1_per_class": [
+    0.5513421389007244,
+    0.11306666666666666,
+    0.05789473684210526,
+    0.37113813035678694,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+  ],
+  "confusion_matrix": [
+    [
+      647,
+      538,
+      37,
+      342,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      28,
+      106,
+      12,
+      253,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      51,
+      211,
+      22,
+      315,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      10,
+      121,
+      19,
+      931,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      13,
+      119,
+      18,
+      490,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      9,
+      113,
+      17,
+      545,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      13,
+      142,
+      13,
+      510,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      12,
+      126,
+      23,
+      550,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ]
+  ],
+  "config": {
+    "stage1_checkpoint": "/home/chiarorosa/cnn-av1-research/thesis/runs/demo-v1-0-gpu/training/solution1_adapter/stage1/stage1_model_best.pt",
+    "stage2_checkpoint": "/home/chiarorosa/cnn-av1-research/thesis/runs/demo-v1-0-gpu/training/solution1_adapter/stage2_adapter/stage2_adapter_model_best.pt",
+    "stage3_rect_checkpoint": "/home/chiarorosa/cnn-av1-research/thesis/runs/demo-v1-0-gpu/training/stage3_rect/model_best.pt",
+    "stage3_ab_checkpoint": "/home/chiarorosa/cnn-av1-research/thesis/runs/demo-v1-0-gpu/training/stage3_ab_binary/model_best.pt",
+    "dataset": "/home/chiarorosa/cnn-av1-research/thesis/runs/demo-v1-0-gpu/datasets/v7_dataset/block_16/val.pt",
+    "split": "val",
+    "timestamp": "2026-04-11T15:15:36.080740"
+  }
+}
