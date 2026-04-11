@@ -1,0 +1,25 @@
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.venv/
+venv/
+env/
+# Logs directories keep structure via .gitkeep placeholders
+**/logs/**
+*.log
+!**/logs/**/.gitkeep
+*Zone.Identifier
+
+*.pt
+*.pth
+*.ckpt
+*.h5
+
+trash/
+.DS_Store
+Thumbs.db
+.vscode/
+
+.opencode/
+openspec/
+*.yuv
