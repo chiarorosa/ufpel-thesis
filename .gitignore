@@ -23,3 +23,8 @@ Thumbs.db
 .opencode/
 openspec/
 *.yuv
+
+runs/
+cleanup_reports/
+# ignorar binario de block_size 8
+*_sample_8.txt
