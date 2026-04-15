@@ -12,6 +12,36 @@ Rules:
 2. `partition_frame_0.txt` MUST exist for each required sequence.
 3. Missing files fail fast with actionable error containing missing paths.
 
+### Bootstrap from Google Drive (public mirror)
+
+When `thesis/uvg` is not present locally, the canonical bootstrap CLI can fetch the
+public mirror and sync it into the expected project layout:
+
+```bash
+python thesis/scripts/bootstrap_uvg_from_drive.py
+```
+
+Default Drive URL:
+
+- `https://drive.google.com/drive/folders/1YjhanJe9EChWhJ6QV_iwKl0eJZJ9V8V2?usp=sharing`
+
+Expected behavior:
+
+1. Downloads folder content via `gdown` to a temporary staging directory.
+2. Detects valid UVG contract root (either `uvg/` folder or direct contract layout).
+3. Syncs files into `thesis/uvg` (no overwrite unless explicitly requested).
+4. Validates raw contract and optional legacy-flow consistency when available.
+
+Download resilience note:
+
+- Default behavior tolerates partial Drive download failures and continues with
+  staged files, then relies on contract validation to fail-fast if required
+  artifacts are missing.
+- When folder-mode download fails, bootstrap attempts a best-effort fallback that
+  fetches only contract artifacts (`partition_frame_*.txt`, `intra_raw_blocks`,
+  `labels`, `qps`) file-by-file.
+- Use `--strict-download` to force immediate abort on any failed Drive file.
+
 ## Binary raw blocks contract (current repository context)
 
 The repository currently includes binary raw blocks at:

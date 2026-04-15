@@ -24,6 +24,11 @@ Thumbs.db
 openspec/
 *.yuv
 
+# Keep UVG directory structure only
+thesis/uvg/**
+!thesis/uvg/.gitkeep
+!thesis/uvg/intra_raw_blocks/.gitkeep
+
 runs/
 cleanup_reports/
 # ignorar binario de block_size 8-64

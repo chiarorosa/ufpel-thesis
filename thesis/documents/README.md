@@ -21,6 +21,7 @@ Consistency gate:
 
 Canonical runtime commands:
 
+- `python thesis/scripts/bootstrap_uvg_from_drive.py` (optional dataset bootstrap)
 - `python thesis/scripts/clean.py [--execute]`
 - `python thesis/scripts/prepare_data.py --run-name <name> ...`
 - `python thesis/scripts/train_pipeline.py --run-name <name> ...`

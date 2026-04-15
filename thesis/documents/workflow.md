@@ -2,6 +2,19 @@
 
 ## 1) Prepare
 
+### 0) (Opcional) Bootstrap de dados UVG via Google Drive
+
+```bash
+python thesis/scripts/bootstrap_uvg_from_drive.py
+```
+
+Opções comuns:
+
+- `--drive-url <url>` para informar um espelho alternativo.
+- `--overwrite` para sobrescrever arquivos já existentes em `thesis/uvg`.
+- `--strict-download` para abortar se qualquer arquivo do Drive falhar.
+- `--dry-run` para apenas planejar sync sem download/movimentação.
+
 ```bash
 python thesis/scripts/prepare_data.py \
   --run-name defense_r1 \

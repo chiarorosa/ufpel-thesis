@@ -129,6 +129,38 @@ Nos exemplos abaixo, é recomendado explicitar o interpretador:
 .venv/bin/python <script.py> <args>
 ```
 
+### 3.4 Download do conjunto de dados UVG (via ZIP no Google Drive)
+
+Script: `thesis/scripts/bootstrap_uvg_from_drive.py`
+
+Fluxo padrão (recomendado):
+
+```bash
+.venv/bin/python thesis/scripts/bootstrap_uvg_from_drive.py
+```
+
+O que esse comando faz:
+
+- baixa um arquivo ZIP do Google Drive (link padrão já configurado no script);
+- extrai o conteúdo e sincroniza para `thesis/uvg`;
+- gera `labels/` e `qps/` automaticamente se estiverem ausentes;
+- valida o contrato de dados ao final.
+
+Parâmetros úteis:
+
+- `--drive-url <url>`: usa outro link de ZIP no Google Drive.
+- `--fresh-download`: limpa cache temporário antes de baixar novamente.
+- `--keep-temp`: mantém arquivos temporários em `thesis/runs/_bootstrap/uvg_drive`.
+- `--overwrite`: sobrescreve arquivos já existentes em `thesis/uvg`.
+- `--skip-validation`: pula a validação final do contrato.
+
+Exemplo com link explícito:
+
+```bash
+.venv/bin/python thesis/scripts/bootstrap_uvg_from_drive.py \
+  --drive-url "https://drive.google.com/file/d/1c3uY4yeOgpyc8O2ta2kLMXP2Z5FU5d-8"
+```
+
 ## 4. Comandos principais
 
 ### 4.1 Limpeza de artefatos gerados

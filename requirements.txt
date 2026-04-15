@@ -20,3 +20,6 @@ seaborn
 notebook
 ipykernel
 plotly
+
+# Data bootstrap from Google Drive
+gdown

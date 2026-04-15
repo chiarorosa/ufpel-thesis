@@ -52,6 +52,10 @@ from .cleanup import (
     collect_cleanup_candidates,
     validate_cleanup_safety,
 )
+from .drive_bootstrap import (
+    DEFAULT_UVG_DRIVE_URL,
+    bootstrap_uvg_from_drive,
+)
 from .runner import run_command
 
 __all__ = [
@@ -80,7 +84,9 @@ __all__ = [
     "VisualSampleStats",
     "FrameOverlayStats",
     "BlockFlowStats",
+    "DEFAULT_UVG_DRIVE_URL",
     "PROTECTED_ROOTS",
+    "bootstrap_uvg_from_drive",
     "cleanup_thesis_outputs",
     "collect_cleanup_candidates",
     "validate_cleanup_safety",
