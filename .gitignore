@@ -26,5 +26,11 @@ openspec/
 
 runs/
 cleanup_reports/
-# ignorar binario de block_size 8
+# ignorar binario de block_size 8-64
 *_sample_8.txt
+*_sample_16.txt
+*_sample_32.txt
+*_sample_64.txt
+
+*420_10bit/
+*420_8bit/
